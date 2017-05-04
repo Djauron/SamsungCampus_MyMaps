@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<div id="directions-panel"></div>
+<div id="info-panel"></div>
+<div id="head">
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div id="liste"></div>
+                <div class="colon">
+                    <div class="form-wrap">
+                        <div class="form-group">
+                            <input type="text" name="start" id="start" class="form-control" placeholder="Depart" value="Position actuel">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="end" id="end" class="form-control" placeholder="Arrivee">
+                        </div>
+                        <div class="form-group">
+                            <select name="checkoption" id="checkoption" class="form-control">
+                                <option value="DRIVING" selected="selected">En voiture</option>
+                                <option value="WALKING" > A pied</option>
+                                <option value="BICYCLING" > A velo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="waypoint" id="waypoint" class="form-control" placeholder="Waypoint">
+                            <button id="add" class="btn btn-custom btn-md btn-block">Add</button>
+                        </div>
+                        <button id="go" class="btn btn-custom btn-md btn-block">Go</button>
+                    </div>
+                    <a href="#map"><button id="buttonF" class="btn btn-custom btn-md btn-block">FullScreen</button></a>
+                </div> <!-- /.col-xs-12 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </section>
+</div>
+
+<div id="map"></div>
+
+
+<script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJPKVZKH6Hi3yF4OHi1vhenNh-PA2VU_s&callback=initMap&libraries=places">
+</script>
+<script src="js/googleapi.js"></script>
+<script src="js/assets.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

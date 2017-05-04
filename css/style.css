@@ -1,0 +1,110 @@
+/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+#map
+{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/body.jpg");
+    background-size: cover;
+}
+
+#head a
+{
+    text-decoration: none;
+}
+
+#head
+{
+    width: 800px;
+    margin: auto;
+    background-color: rgba(33,100,213, 0.5);
+}
+
+.colon
+{
+    width: 800px;
+}
+
+#search
+{
+    width: 40%;
+    margin: auto;
+}
+
+#login
+{
+    padding-top: 30px
+}
+
+#login .form-wrap
+{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.btn-custom
+{
+    color: #fff;
+    background-color: #1fa67b;
+}
+
+.btn-custom:hover,
+.btn-custom:focus
+{
+    color: #fff;
+}
+
+#buttonF
+{
+    width: 30%;
+    margin: 5px auto;
+}
+
+#info-panel
+{
+    margin: auto;
+    background-color: white;
+}
+
+#info-panel {
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#info-panel select, #info-panel input {
+    font-size: 15px;
+}
+
+#info-panel select {
+    width: 100%;
+}
+
+#info-panel i {
+    font-size: 12px;
+}
+#info-panel {
+    max-height: 300px;
+    float: right;
+    width: 390px;
+    overflow: auto;
+    margin-right: 100px;
+}
+
+#directions-panel
+{
+    max-height: 300px;
+    width: 390px;
+    float: left;
+    background-color: white;
+    margin-left: 50px;
+    overflow: auto;
+}
